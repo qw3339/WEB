@@ -13,10 +13,12 @@
     <link rel="icon" href="ico.ico" type="image/x-icon" >
 </head>
 <body>
-    <h1 align ="center">Заголовок 1</h1>
-    <p>Остальных может быть сколько угодно, H1 только один</p>
+    <!--<h1 align="center">Заголовок 1</h1>
+
+    <p>Остальных может быть сколько угодно, H1 только один</p>-->
+    <h1 style="text-align: center; font-family: 'Arial'; color:darkblue" >Заголовок 1</h1>
     <hr>
-    <h2 align ="center">Дескрипторы (Tags)</h2>
+    <h1 style="text-align:center">Дескрипторы (Tags)</h1>
     <p>
         <b>&#60;p&#62; (Paragraph) (Obsolte)</b> - блочный дескриптор, который описывает абзац и поддерживает следующие атребуты:<br>
         <b>align</b>="<i>left | right | center | justify </i>" - выравнивание.<br>
@@ -24,13 +26,60 @@
         <b>&#60;i&#62;  (Italic)</b> - <i>линейный дескриптор, который делает текст курсивом;</i><br>
         <b>&#60;u&#62; (Underscore)</b> - <u>линейный дескриптор, который подчеркивает текст;</u><br>
         <b>&#60;s&#62; (Strike)</b> - <s>линейный дескриптор, который перечеркивает текст;</s><br>
-        <b>&#60;strike&#62; (Strike) (Obsolte)</b> - <strike>линейный дескриптор, который перечеркивает текст;</strike><br>
+        <b>&#60;strike&#62; (Strike) (Obsolte)</b> - <span style="text-decoration:line-through">линейный дескриптор, который перечеркивает текст;</span><br>
+    </p>
 
+    <hr>
+    <h2> Специальные символы на странице</h2>
+    <p>
+        Для отображения специальных символов в HTML используються спициальные последовательности <a href="https://htmlbook.ru/samhtml/tekst/spetssimvoly"> https://htmlbook.ru/samhtml/tekst/spetssimvoly</a>. Спецсимволы так же можно отображить при помощи цыфровых кода.<br>
+        &#9834;
+    </p>
 
+    <hr>
+    <h2>Дескрипторы логического форматирования</h2>
+    <p>
+        Используются для SEO - Search Engine Optimisation. <br>
+        Некоторые дескрипторы логического форматирования дублирую дескрипторы физического форматирования.
+        <br>
+        <strong>Strong</strong><br>
+        <em> Emphasized</em><br>
+        Дескриптор <small>small</small> делает размер шрифта на единицу меньше базового, а <span style="font-size:large">big</span> &ndash; на 1 больше базового.<br>
+        Базовый размер шрифта во всех браузерах 15 пикселей.<br>
+        Индексы: <sub>sub</sub>   <sup>sup</sup> <br>
+        Дескриптор <samp>samp</samp> and <code>code</code> используються для вывода фрагментов программного кода.
+        Эти дескрипторы выводят текст <span style="font-family:monospace">моношримным </span> шрифтом, для этих целей раньше использовался дескриптор 'tt' (Obsolte).<br>
+        Для вывода программного кода часто используеться 'pre' &ndash; Preformatted. Это блочный дескриптор, который ни в коем случае нельзя использовать внутри 'p'.
 
+    </p>
+    <pre>
+    <code>
+            for(counter; condition; expression)
+            {
+                ...;
+                group-of-statements;
+                ...;
+            }
+    </code>
+    </pre>
+
+    <hr>
+    <h2>Сокращения</h2>
+    <p>
+        Выделяються дескрипторами 'acronym' и 'abbr', например:<br>
+        <strong>Visual Studio</strong> &ndash; это лучшая в мире <abbr  title="Integrat Development Environment - Интегрированная среда разработки">IDE</abbr><br>
 
     </p>
 
+    <hr>
+    <h2>Цитаты</h2>
+    <p>
+
+        <q>Short quotation</q><br>
+        <cite>Цитата <code>'site'</code>, ни в коем случае не пишеться в 'paragraph'</cite><br>
+
+    </p>
+    <blockquote>Long quotation, так же как и  <code>'site'</code> является блочным дескриптором, и никогда не влючаеться в 'paragraph'.</blockquote><br>
 
 
 </body>
