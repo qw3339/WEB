@@ -1,0 +1,27 @@
+﻿body {
+    /*font-family: 'Roboto', 'Brush Script MT','Arial';*/
+    font-family: 'Roboto';
+}
+
+h1 {
+    font-family: 'Brush Script MT';
+    text-align: center;
+    color: grey;
+}
+
+h2 {
+    color: grey;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+#Intro {
+    color: darkblue;
+}
+
+.Definition {
+    font-weight: 700
+}
