@@ -3,12 +3,19 @@
 body {
     /*font-family: 'Roboto', 'Brush Script MT','Arial';*/
     font-family: 'Roboto';
+
+    background-color:aliceblue;
+    background-image:url(2.jpg);
+    background-attachment:fixed;
+
+
+
 }
 
 h1 {
     font-family: 'Playwrite CU','Segoe Script',sans-serif;
     text-align: center;
-    color: grey;
+    color: darkblue;
 }
 
 h2 {
@@ -18,6 +25,7 @@ h2 {
 p {
     font-size: 18px;
     text-align: justify;
+    background-color:azure
 }
 
 #Intro {
@@ -30,19 +38,34 @@ p {
 
 p > b{
     /*b непосредственно вложен в p*/
-    color:forestgreen
+    color:forestgreen;
 }
 p  i{
-    text-decoration:underline
+    text-decoration:underline;
 }
 h1 + h2 {
     /*+ - дескрипторы строго следуют один за другим */
     /*~ - между дескрипторами могут встречаться другие дескрипторы */
-    color: red
+    color: red;
 }
 h1 ~ h2 {
     /*+ - дескрипторы строго следуют один за другим */
     /*~ - между дескрипторами могут встречаться другие дескрипторы */
-    color: hotpink
+    color: hotpink;
+}
+img {
+    /*    align-content: center;
+    height: 286px;
+    height: 30%;
+    position: absolute;
+    padding: initial;*/
+    border: solid;
+    width: 30%;
+    float: left;
+/*    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;*/
+    margin: 3% 3% 3% ;
+
 }
 
