@@ -1,10 +1,12 @@
-﻿body {
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+body {
     /*font-family: 'Roboto', 'Brush Script MT','Arial';*/
     font-family: 'Roboto';
 }
 
 h1 {
-    font-family: 'Brush Script MT';
+    font-family: 'Playwrite CU','Segoe Script',sans-serif;
     text-align: center;
     color: grey;
 }
@@ -25,3 +27,22 @@ p {
 .Definition {
     font-weight: 700
 }
+
+p > b{
+    /*b непосредственно вложен в p*/
+    color:forestgreen
+}
+p  i{
+    text-decoration:underline
+}
+h1 + h2 {
+    /*+ - дескрипторы строго следуют один за другим */
+    /*~ - между дескрипторами могут встречаться другие дескрипторы */
+    color: red
+}
+h1 ~ h2 {
+    /*+ - дескрипторы строго следуют один за другим */
+    /*~ - между дескрипторами могут встречаться другие дескрипторы */
+    color: hotpink
+}
+
