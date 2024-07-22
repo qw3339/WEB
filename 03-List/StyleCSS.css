@@ -1,0 +1,25 @@
+﻿body
+{
+
+    font-size:24px;
+    background-color: cornsilk;
+}
+ol{
+    list-style-type:georgian;
+}
+ul{
+    list-style:disc;
+    color:hotpink;
+    text-align:justify;
+    list-style-position:inside;
+
+}
+.bitcoin {
+    list-style-image: url(bitcoin32.svg)
+    /*
+        JPG
+        PNG
+        GIF
+        BMP
+    */
+}
