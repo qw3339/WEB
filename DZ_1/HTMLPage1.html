@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Типы данных на C++</title>
+    <style>
+        body {
+            /*text-align:center*/
+            /*width: 200px;*/
+            /*margin: 20px 30px;*/
+            /*margin: 20px 50px 20px ;*/
+            margin: 20px 50px 20px 20px;
+        }
+        .none {
+            list-style: none;
+        }
+        .Definition {
+            font-weight: 700
+        }
+        .blue{
+            color:blue
+        }
+        .zrach {
+            color: rgba(0,0,0,0.5)
+        }
+        .line {
+            text-decoration:line-through
+        }
+        .italic {
+            font-style: italic
+        }
+        .green {
+            color: green
+        }
+        .red{
+            color:darkred
+        }
+        .arial{
+            font-family:Arial;
+            font-size:13px
+        }
+        .aquamarine {
+            color: darkturquoise
+        }
+        .color{
+            color:dodgerblue
+        }
+        p {
+            text-align: justify
+        }
+        ul {
+            text-align: justify
+        }
+        .img {
+            
+            text-align: center;
+           
+        }
+        img {
+            width: 50%;
+            margin: 3% 3% 3% ;
+            
+        }
+/*        h2 {
+            text-align:left
+        }
+        h3 {
+            text-align: left
+        }*/
+    </style>
+</head>
+<body>
+    <h2>Числовые типы:</h2>
+    <h3 class="color">Числовые типы:</h3>
+    <ul>
+        <li>
+            short. Переменная типа short занимает 2 Байта памяти, и принимает значения в
+            диапазоне <br>
+            unsigned short: 0...65 535; 0000 0000 0000 0000 ..... 1111 1111 1111 1111<br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;0...2<sup>16</sup>-1:<br>
+            signed short: -32 768 ... 32 767;<br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-2<sup>15</sup>... +2<sup>15</sup> -1; −1;
+
+        </li>
+        <br>
+        <li>
+            long - занимает 4 Байта памяти, и принимает значения в диапазоне<br>
+            unsigned long: 0 ... 4 294 967 295;<br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;0... 2<sup>32</sup>-1:<br>
+            signed long: - 2 147 483 648 ... 2 147 483 647;<br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-2<sup>31</sup> ...2<sup>31</sup>-1;
+
+        </li>
+        <br>
+        <li>
+            int (Integer - Целое число). Платформенно зависимый тип данных,
+            его величина зависит от процессора (CPU) операционной системы (ОС)
+            и среды разработки (IDE Integrated Development Environment).
+            B Visual Studio для Microsoft Windows ТИП данных int заниамет 4 Байта,
+            следовательно, его диапазоны принимаемых значений полностью совпадают с long.
+
+        </li>
+        <br>
+        <li>
+            long long. Занимает 8 Байт памяти, и принимает значения в диапазоне <br>
+            unsigned long long int: 0 ... 2<sup>64</sup> – 1;<br>
+            signed long long int: -2<sup>63</sup> ... 2<sup>63</sup> – 1;
+
+        </li>
+    </ul>
+    <h3 class="color">Вещественные типы:</h3>
+
+    <p>Вещественные типы предназначены для хранения дробных чисел, (чисел с плавающей запятой).</p>
+    <p>Вещественные типы есть только знаковые, они не могут быть unsigned. В языке C++ есть всего два вещественных типа: <span class="Definition">float</span> и <span class="Definition">double</span>.</p>
+    <p><span class="Definition">float</span> – вещественный тип одинарной точности, занимает 4 Байта памяти.</p>
+    <p><span class="Definition">double</span> – вещественный тип двойной точности, занимает 8 Байт памяти.</p>
+    <p>float и double могут хранить ОЧЕНЬ БОЛЬШИЕ и ОЧЕНЬ МАЛЕНЬКИЕ числа, но эти числа могут быть не совсем точными.</p>
+    <p>Разделителем целой и дробной части у float и double является точка, а не запятая.</p>
+    <p>Объем занимаемой памяти переменной, константой или типом данных всегда можно определить оператором<span class="arial"><span class="blue"> sizeof</span></span>() следующим образом:</p>
+    <p class="arial">&emsp;&emsp;&emsp; cout <span class="aquamarine"><<</span> <span class="blue">sizeof</span>(<span class="blue">int</span>) <span class="aquamarine"><<</span> endl;</p>
+    <p>или</p>
+    <p>&emsp;&emsp;&emsp; <span class="arial">cout <span class="aquamarine"><<</span> <span class="blue">sizeof</span>(1024) <span class="aquamarine"><<</span> endl;</span> //это константа типа int, она занимает 4 Байта</pclass="arial">
+    <p>
+        Минимальное и максимальное значение для любого типа можно узнать при помощи макроопределений Visual Studio.
+        Например, INT_MIN возвращает минимальное значение, которое можно записать в int,
+        a INT MAX Максимальное значение. У любой беззнаковой переменной минимальное значение всегда 0,
+        а максимальное, например для int-a можно узнать при помощи UINT_MAX. U означает unsigned.
+    </p>
+
+    <p>
+        Д.З.: при помощи оператора sizeof и макроопределений вывести на экран объем занимаемой памяти для все числовых типов данных. Макроопределения можно найти в файлах "limits.h" и "float.h", эти фалы можно открыть любым текстовым редактором.
+    </p>
+    <h2>Имя переменной</h2>
+    <p>
+        Имя переменной нужно для того, чтобы к ней можно было обращаться по этому имени.
+        К переменной обращаются для того, чтобы сохранить в ней какое-то значение,
+        а потом использовать это значение. Когда мы сохраняем значение,
+        мы обращаемся к переменной "на запись", а когда смотрим какое в ней значение,
+        то обращаемся на чтение. В процессе компиляции имена переменных преобразуются в адреса памяти.
+    </p>
+    <p>
+        Для именования переменных используются идентификаторы (identifiers) составленные по определенным правилам.
+        <span class="Definition">Идентификатор(identifier) – это имя.</span>
+    </p>
+    <h3 class="color">Правила именования переменных</h3>
+    <ul>
+        <li>
+            Имя переменной (identifier) может состоять из символов латинского алфавита, строчных и ЗАГЛАВНЫХ,
+            символов цифр 0123456789 и символа подчеркивания _; ABC....Zabc...z0123...9
+        </li>
+        <br>
+        <li>
+            Имя переменной (identifier) НЕ может начинаться символом цифры (<span class="line">1stPlace</span>, <span class="zrach">Placel</span>);
+
+        </li>
+        <br>
+        <li>
+            Имена переменных<span class="italic"> регистрозависимы</span>,
+            то есть строчные и ЗАГЛАВНЫЕ символы различаются компилятором.
+            Например<span class="zrach"> double Price</span>; и <span class="zrach">double price</span>; это две разные переменные;
+
+        </li>
+        <br>
+        <li>
+            Для именования переменных НЕЛЬЗЯ использовать ключевые слова языка C++
+            (<span class="arial"><span class="blue">void</span>, <span class="blue">namespace</span>, <span class="blue">for</span>, <span class="blue">if</span>, <span class="blue">else</span>, <span class="blue">while</span></span> и т.д.);
+
+        </li>
+
+    </ul>
+    <p>
+        Имя переменной должно быть осмысленным, то есть, по имени переменной должно становиться понятно,
+        что в ней хранится!!!
+        Например, переменная <span class="zrach">double Weight</span>; содержит вес чего-либо.
+    </p>
+    <h2>Константы</h2>
+    <p>
+        <span class="italic">Константа</span> - это именованная область памяти,
+        содержимое которой НЕ может изменяться в процессе выполнения программы.
+        Для того, чтобы из переменной сделать константу,
+        перед ее объявлением нужно написать ключевое слово <span class="arial"><span class="blue">const</span></span>.
+    </p>
+    <p class="arial">
+        <span class="blue">int</span> speed = 0; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="green">//Скорость (переменное значение)</span><br>
+        <span class="blue">const int</span> MAX_SPEED = 250; &emsp;<span class="green">//Максимальная скорость (постоянное значение)</span>
+    </p>
+    <p>
+        Константы принято называть заглавными буквами, для того чтобы после объявления было понятно,
+        что это константа.
+    </p>
+    <p>
+        Кроме именованных констант существуют так же <span class="italic">символьные</span>, <span class="italic">строковые</span> и <span class="italic">числовые</span>
+        константы.
+    </p>
+    <p>
+        <span class="italic"> Символьная константа</span> - это один единственный символ, заключенный в одинарные кавычки (<span class="red">''</span>),
+        например <span class="arial"><span class="red">'+'</span></span> ИЛИ <span class="arial"><span class="red">'A'</span></span>. Символьные константы это константы типа <span class="arial"><span class="blue">char</span></span>.
+        Это легко проверить следующим образом:
+    </p>
+    <p class="arial">
+        cout <span class="aquamarine"><<</span> <span class="red">+</span> <span class="aquamarine"><<</span> endl;<br>
+        cout <span class="aquamarine"><<</span> <span class="blue">sizeof</span>(<span class="blue">char</span>) <span class="aquamarine"><<</span> endl;<br>
+        cout <span class="aquamarine"><<</span> <span class="blue">sizeof</span>(<span class="red">'+'</span>) <span class="aquamarine"><<</span> endl;<br>
+        cout <span class="aquamarine"><<</span> <span class="blue">typeid</span>(<span class="red">'+'</span>).name() <span class="aquamarine"><<</span> endl;<br>
+    </p>
+
+    <p>
+        <span class="italic">Строковая константа</span> - это сколько угодно, каких угодно символов, заключенных в двойные кавычки <span class="arial"><span class="red">""</span></span>,
+        например — <span class="arial"><span class="red">"Hello World"</span></span> или <span class="arial"><span class="red">"+"</span></span>.
+        Строковые константы заниамют на 1 байт больше, чем содержат символов,
+        это связано с тем, что компилятор неявно добавляет ASCII-символ с кодом 0 в конец строки.
+        Это легко проверить следующим образом:
+    </p>
+    <p class="arial">
+        cout <span class="aquamarine"><<</span> <span class="red">"Строковые константы:\n"</span>;<br>
+        cout <span class="aquamarine"><<</span> <span class="red">"Hello World"</span> <span class="aquamarine"><<</span> endl;<br>
+        cout <span class="aquamarine"><<</span> <span class="blue">sizeof</span>(<span class="red">"Hello World"</span>) <span class="aquamarine"><<</span> endl;<br>
+        cout <span class="aquamarine"><<</span> <span class="red">"+"</span> <span class="aquamarine"><<</span> endl;<br>
+        cout <span class="aquamarine"><<</span> <span class="blue">sizeof</span>(<span class="red">"+"</span>) <span class="aquamarine"><<</span> endl;<br>
+    </p>
+    <p>
+        <span class="italic">Числовая константа</span> - это просто число в исходном коде программы. Оно может быть
+        целым, или дробным, например:
+    </p>
+    <p class="arial">
+        cout <span class="aquamarine"><<</span> 1024 << endl;   &emsp;&emsp;&emsp;<span class="green">// Это числовая константа</span><br>
+        cout <span class="aquamarine"><<</span> <span class="blue">sizeof</span>(1024) <span class="aquamarine"><<</span> endl;<br>
+        cout <span class="aquamarine"><<</span> <span class="blue">typeid</span>(1024).name() <span class="aquamarine"><<</span> endl;<br>
+    </p>
+    <p>
+        НО, у каждого значения (переменной, константы) в языке C++ есть тип.
+        1024 константа типа <span class="arial"><span class="blue">int</span></span>. Есть числовые константы и других типов:
+    </p>
+    <p class="arial">
+        cout <span class="aquamarine"><<</span> 3.14 <span class="aquamarine"><<</span> endl;   &emsp;&emsp;<span class="green">//Числовая константа типа double</span><br>
+        cout <span class="aquamarine"><<</span> 5. <span class="aquamarine"><<</span> endl;     &emsp;&emsp;&emsp;<span class="green">//Числовая константа типа double</span><br>
+        cout <span class="aquamarine"><<</span> 5.f <span class="aquamarine"><<</span> endl;    &emsp;&emsp;&nbsp;&nbsp;<span class="green">//Числовая константа типа float</span><br>
+        cout <span class="aquamarine"><<</span> 12311 <span class="aquamarine"><<</span> endl;  &emsp;<span class="green">//Числовая константа типа long long</span><br>
+        cout <span class="aquamarine"><<</span> 123ull <span class="aquamarine"><<</span> endl; &emsp;<span class="green">//Числовая константа типа unsigned long long</span><br>
+    </p>
+
+    <p>Числовые, символьные и строковые константы еще называют <span class="italic">литералами</span>.</p>
+    <h2>Операторы С++</h2>
+    <p>Программа на языке C++ состоит из выражений, каждое из которых заканчивается символом <span class="red">';'</span>.</p>
+
+    <p><span class="italic">Выражение (Expression)</span> - это синтаксическая конструкция, состоящая из операндов и операторов.</p>
+    <p>
+        <span class="italic">Операнды</span> - это объекты (элементы выражения), над которыми выполняется какое-то действие.
+        В качестве операндов в выражениях обычно выступают переменные и константы.
+    </p>
+    <p>
+        <span class="italic">Операторы</span> — это объекты (элементы выражения), которые показывают, какое действие нужно выполнить над операндами. Операторы обозначаются одним или двумя специальными
+        символами.
+    </p>
+    <span class="img"><img src="p1.png" alt="VonNeumann" title="Von Neumann" align="middle" /></span>
+    
+    <p>
+        Операторы бывают: унарные, бинарные и тернарные.
+        Унарные операторы выполняют действие над одним операндом,
+        бинарные могут работать только с двумя операндами,
+        а тернарные только с тремя операндами.
+        Например <span class="arial">-3</span> здесь оператор <span class="red">'-'</span> является унарным,
+        он просто показывает что число 3 меньше нуля.
+        В выражении 8 – 3 оператор минус – бинарный,
+        он показывает из какого числа (8) вычесть другое число (3).
+        5<sup>*</sup>3 — выражение имеет смысл одно число умножается на другое.
+        <sup>*</sup>3 выражение не имеет смысла, то есть, оператор <sup>*</sup> только бинарный – может работать только с двумя операндами (числами).
+    </p>
+    <p>Все операторы языка C++ можно разделить на категории:</p>
+    <ul>
+        <li>
+            <span class="italic">Арифметические операторы (Arithmetical operators):</span><br>
+            Unary: + -;<br>
+            Binary: + - * / %;<br>
+            <ul>
+
+                <li style="list-style: inside;">
+                    Если делимое меньше делителя, то оно полностью выпадает в остаток<br>
+
+                    <ul class="arial">
+                        int a = 25;
+
+                    </ul>
+                </li>
+
+
+
+            </ul>
+        </li>
+
+
+    </ul>
+
+
+</body>
+</html>
