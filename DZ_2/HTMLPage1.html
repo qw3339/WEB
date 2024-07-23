@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" >
+    <title>Таблица</title>
+    <style>
+        body{
+            font-family:Arial
+        }
+        .rem {
+            list-style-type: upper-roman
+        }
+        .abs {
+            list-style-type:lower-latin
+        }
+        .gal {
+            list-style-image: url(gal.svg)
+        }
+        .galf {
+            list-style-image: url(galf.svg)
+        }
+        .circle {
+            list-style-image: url(circle.svg)
+        }
+        .cross {
+            list-style-image: url(cross1.svg)
+        }
+        #red{
+            color:crimson
+        }
+        #yellow{
+            color: gold
+        }
+        #green{
+            color:forestgreen
+        }
+        #blue{
+            color:mediumblue
+        }
+        #pup{
+            color:indigo
+        }
+        .black{
+            color:black
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul >
+        <li class="rem" id="red">
+            Photoshop
+            <ul class="black">
+                <li class="abs">
+                    Интерфейс
+                </li>
+                <li class="abs">Эффекты</li>
+                <li class="abs">Инструменты</li>
+                <li class="abs">Практика</li>
+            </ul>
+        </li>
+        <li class="rem" id="yellow">
+            Illustrator
+            <ul class="black">
+                <li class="abs"> Интерфейс</li>                
+                <li class="abs">Инструменты</li>
+                <li class="abs">Практика</li>
+            </ul>
+        </li>
+        <li class="rem" id="green">
+            Верстка
+            <ul class="black">
+                <li class="abs">
+                    XHTML
+                    <ul >
+                        <li class="circle">Основы</li>
+                        <li class="circle">Способы верстки:
+                            <ul class="gal">
+                                <li>Таблицы</li>
+                                <li>Фреймы</li>
+                                <li>Верстка тегами div</li>
+                            </ul>
+                        </li>
+                    </ul >
+                </li>
+                <li  class="abs">
+                    CSS
+                    <ul>
+                        <li class="circle">Основы</li>
+                        <li class="circle">Перечень свойств</li>
+                    </ul>
+                </li>
+            </ul >
+        </li>
+        <li class="rem" id="blue">
+            Flash
+            <ul class="black">
+                <li class="abs">Анимация</li>
+                <li class="abs">Action Script</li>
+            </ul>
+        </li>
+        <li class="rem" id="pup">
+            CMS
+            <ul class="black">
+                <li class="abs">WordPress
+                    <ul>
+                        <li class="circle">Установка</li>
+                        <li class="circle">Основы работы:
+                            <ul class="galf">
+                                <li>Интерфейс</li>
+                                <li>Шаблоны</li>
+                                <li>Контент</li>
+                                <li>Плагины</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="abs">Joomla
+                    <ul>
+                        <li class="circle">Установка</li>
+                        <li class="circle">
+                            Основы работы:
+                            <ul class="galf">
+                                <li>Интерфейс</li>
+                                <li>Шаблоны</li>
+                                <li>Контент</li>
+                                <li>Расширения:
+                                    <ul class="cross">
+                                        <li>Компоненты</li>
+                                        <li>Модули</li>
+                                        <li>Плагины</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        
+
+
+
+
+
+    </ul>
+</body>
+</html>
