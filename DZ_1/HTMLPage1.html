@@ -2,7 +2,7 @@
 
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" >
     <title>Типы данных на C++</title>
     <style>
         body {
@@ -118,9 +118,9 @@
     <p>float и double могут хранить ОЧЕНЬ БОЛЬШИЕ и ОЧЕНЬ МАЛЕНЬКИЕ числа, но эти числа могут быть не совсем точными.</p>
     <p>Разделителем целой и дробной части у float и double является точка, а не запятая.</p>
     <p>Объем занимаемой памяти переменной, константой или типом данных всегда можно определить оператором<span class="arial"><span class="blue"> sizeof</span></span>() следующим образом:</p>
-    <p class="arial">&emsp;&emsp;&emsp; cout <span class="aquamarine"><<</span> <span class="blue">sizeof</span>(<span class="blue">int</span>) <span class="aquamarine"><<</span> endl;</p>
+    <p class="arial">&emsp;&emsp;&emsp; cout <span class="aquamarine">&lt;&lt;</span> <span class="blue">sizeof</span>(<span class="blue">int</span>) <span class="aquamarine">&lt;&lt;</span> endl;</p>
     <p>или</p>
-    <p>&emsp;&emsp;&emsp; <span class="arial">cout <span class="aquamarine"><<</span> <span class="blue">sizeof</span>(1024) <span class="aquamarine"><<</span> endl;</span> //это константа типа int, она занимает 4 Байта</pclass="arial">
+    <p class="arial">&emsp;&emsp;&emsp; <span class="arial">cout <span class="aquamarine">&lt;&lt;</span> <span class="blue">sizeof</span>(1024) <span class="aquamarine">&lt;&lt;</span> endl;</span> //это константа типа int, она занимает 4 Байта</p >
     <p>
         Минимальное и максимальное значение для любого типа можно узнать при помощи макроопределений Visual Studio.
         Например, INT_MIN возвращает минимальное значение, которое можно записать в int,
@@ -199,10 +199,10 @@
         Это легко проверить следующим образом:
     </p>
     <p class="arial">
-        cout <span class="aquamarine"><<</span> <span class="red">+</span> <span class="aquamarine"><<</span> endl;<br>
-        cout <span class="aquamarine"><<</span> <span class="blue">sizeof</span>(<span class="blue">char</span>) <span class="aquamarine"><<</span> endl;<br>
-        cout <span class="aquamarine"><<</span> <span class="blue">sizeof</span>(<span class="red">'+'</span>) <span class="aquamarine"><<</span> endl;<br>
-        cout <span class="aquamarine"><<</span> <span class="blue">typeid</span>(<span class="red">'+'</span>).name() <span class="aquamarine"><<</span> endl;<br>
+        cout <span class="aquamarine">&lt;&lt;</span> <span class="red">+</span> <span class="aquamarine">&lt;&lt;</span> endl;<br>
+        cout <span class="aquamarine">&lt;&lt;</span> <span class="blue">sizeof</span>(<span class="blue">char</span>) <span class="aquamarine">&lt;&lt;</span> endl;<br>
+        cout <span class="aquamarine">&lt;&lt;</span> <span class="blue">sizeof</span>(<span class="red">'+'</span>) <span class="aquamarine">&lt;&lt;</span> endl;<br>
+        cout <span class="aquamarine">&lt;&lt;</span> <span class="blue">typeid</span>(<span class="red">'+'</span>).name() <span class="aquamarine">&lt;&lt;</span> endl;<br>
     </p>
 
     <p>
@@ -213,31 +213,31 @@
         Это легко проверить следующим образом:
     </p>
     <p class="arial">
-        cout <span class="aquamarine"><<</span> <span class="red">"Строковые константы:\n"</span>;<br>
-        cout <span class="aquamarine"><<</span> <span class="red">"Hello World"</span> <span class="aquamarine"><<</span> endl;<br>
-        cout <span class="aquamarine"><<</span> <span class="blue">sizeof</span>(<span class="red">"Hello World"</span>) <span class="aquamarine"><<</span> endl;<br>
-        cout <span class="aquamarine"><<</span> <span class="red">"+"</span> <span class="aquamarine"><<</span> endl;<br>
-        cout <span class="aquamarine"><<</span> <span class="blue">sizeof</span>(<span class="red">"+"</span>) <span class="aquamarine"><<</span> endl;<br>
+        cout <span class="aquamarine">&lt;&lt;</span> <span class="red">"Строковые константы:\n"</span>;<br>
+        cout <span class="aquamarine">&lt;&lt;</span> <span class="red">"Hello World"</span> <span class="aquamarine">&lt;&lt;</span> endl;<br>
+        cout <span class="aquamarine"> &lt;&lt; </span> <span class="blue">sizeof</span>(<span class="red">"Hello World"</span>) <span class="aquamarine">&lt;&lt;</span> endl;<br>
+        cout <span class="aquamarine">&lt;&lt;</span> <span class="red">"+"</span> <span class="aquamarine">&lt;&lt;</span> endl;<br>
+        cout <span class="aquamarine">&lt;&lt;</span> <span class="blue">sizeof</span>(<span class="red">"+"</span>) <span class="aquamarine">&lt;&lt;</span> endl;
     </p>
     <p>
         <span class="italic">Числовая константа</span> - это просто число в исходном коде программы. Оно может быть
         целым, или дробным, например:
     </p>
     <p class="arial">
-        cout <span class="aquamarine"><<</span> 1024 << endl;   &emsp;&emsp;&emsp;<span class="green">// Это числовая константа</span><br>
-        cout <span class="aquamarine"><<</span> <span class="blue">sizeof</span>(1024) <span class="aquamarine"><<</span> endl;<br>
-        cout <span class="aquamarine"><<</span> <span class="blue">typeid</span>(1024).name() <span class="aquamarine"><<</span> endl;<br>
+        cout <span class="aquamarine">&lt;&lt;</span> 1024 &lt;&lt; endl;   &emsp;&emsp;&emsp;<span class="green">// Это числовая константа</span><br>
+        cout <span class="aquamarine">&lt;&lt;</span> <span class="blue">sizeof</span>(1024) <span class="aquamarine">&lt;&lt;</span> endl;<br>
+        cout <span class="aquamarine">&lt;&lt;</span> <span class="blue">typeid</span>(1024).name() <span class="aquamarine">&lt;&lt;</span> endl;<br>
     </p>
     <p>
         НО, у каждого значения (переменной, константы) в языке C++ есть тип.
         1024 константа типа <span class="arial"><span class="blue">int</span></span>. Есть числовые константы и других типов:
     </p>
     <p class="arial">
-        cout <span class="aquamarine"><<</span> 3.14 <span class="aquamarine"><<</span> endl;   &emsp;&emsp;<span class="green">//Числовая константа типа double</span><br>
-        cout <span class="aquamarine"><<</span> 5. <span class="aquamarine"><<</span> endl;     &emsp;&emsp;&emsp;<span class="green">//Числовая константа типа double</span><br>
-        cout <span class="aquamarine"><<</span> 5.f <span class="aquamarine"><<</span> endl;    &emsp;&emsp;&nbsp;&nbsp;<span class="green">//Числовая константа типа float</span><br>
-        cout <span class="aquamarine"><<</span> 12311 <span class="aquamarine"><<</span> endl;  &emsp;<span class="green">//Числовая константа типа long long</span><br>
-        cout <span class="aquamarine"><<</span> 123ull <span class="aquamarine"><<</span> endl; &emsp;<span class="green">//Числовая константа типа unsigned long long</span><br>
+        cout <span class="aquamarine">&lt;&lt;</span> 3.14 <span class="aquamarine">&lt;&lt;</span> endl;   &emsp;&emsp;<span class="green">//Числовая константа типа double</span><br>
+        cout <span class="aquamarine">&lt;&lt;</span> 5. <span class="aquamarine">&lt;&lt;</span> endl;     &emsp;&emsp;&emsp;<span class="green">//Числовая константа типа double</span><br>
+        cout <span class="aquamarine">&lt;&lt;</span> 5.f <span class="aquamarine">&lt;&lt;</span> endl;    &emsp;&emsp;&nbsp;&nbsp;<span class="green">//Числовая константа типа float</span><br>
+        cout <span class="aquamarine">&lt;&lt;</span> 12311 <span class="aquamarine">&lt;&lt;</span> endl;  &emsp;<span class="green">//Числовая константа типа long long</span><br>
+        cout <span class="aquamarine">&lt;&lt;</span> 123ull <span class="aquamarine">&lt;&lt;</span> endl; &emsp;<span class="green">//Числовая константа типа unsigned long long</span><br>
     </p>
 
     <p>Числовые, символьные и строковые константы еще называют <span class="italic">литералами</span>.</p>
@@ -253,7 +253,7 @@
         <span class="italic">Операторы</span> — это объекты (элементы выражения), которые показывают, какое действие нужно выполнить над операндами. Операторы обозначаются одним или двумя специальными
         символами.
     </p>
-    <span class="img"><img src="p1.png" alt="VonNeumann" title="Von Neumann" align="middle" /></span>
+    <span class="img"><img src="p1.png" alt="VonNeumann" title="Von Neumann"  /></span>
     
     <p>
         Операторы бывают: унарные, бинарные и тернарные.
