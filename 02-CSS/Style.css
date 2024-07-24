@@ -4,7 +4,7 @@ body {
     /*font-family: 'Roboto', 'Brush Script MT','Arial';*/
     font-family: 'Roboto';
 
-    background-color:aliceblue;
+    background-color:whitesmoke;
     background-image:url(2.jpg);
     background-attachment:fixed;
 
@@ -25,9 +25,16 @@ h2 {
 p {
     font-size: 18px;
     text-align: justify;
-    background-color:azure
+    background-color: whitesmoke;
+    /*    border-width:1px;
+    border-top:solid;
+    border-top-width:5px;
+    border-style:solid;*/
+    border-style: solid;
+    border-width:5px 10px 15px 25px;
+    padding:10px;
+    margin:20px 15px 30px;
 }
-
 #Intro {
     color: darkblue;
 }
@@ -67,5 +74,55 @@ img {
     margin-bottom: 3%;*/
     margin: 3% 3% 3% ;
 
+}
+table {
+    /*Рамка*/
+    border: 2px;
+    border-style: solid;
+    border-collapse: collapse;
+    /*Выравнивание таблицы*/
+    margin-left: auto;
+    margin-right: auto;
+    width:700px;
+    background-color: aliceblue;
+}
+table caption{
+    background-color:antiquewhite;
+    text-align:left;
+    font-style:initial
+        
+}
+    table th{       
+        border: 1px solid;
+        padding:20px;
+        color:white;
+        Background-color:rgb(107, 95, 181);
+    }
+    table td {
+        border: 1px solid;
+        text-align: center;
+    }
+.RowHeader {
+    font-weight: 700;
+    padding: 10px;
+    text-align: left;
+}
+.Present {
+    /*Присутсвует*/
+    background-color: lightgreen;
+}
+.NA {
+    background-color:  hotpink;
+}
+a{
+    
+}
+h4 {
+    text-align: center;
+}
+/*Присутсвует*/
+ul {
+    background-color: lightgrey;
+    list-style:none
 }
 
