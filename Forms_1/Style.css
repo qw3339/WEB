@@ -1,0 +1,24 @@
+﻿body
+{
+
+}
+.logo{
+    border: solid 3px;
+    float:left;
+    top:100px;
+    left:300px;
+    /*position:absolute;*/
+    margin:20px;
+
+}
+.parent {
+    background-color: aqua
+}
+.header{
+    position:sticky;
+
+    background-color:silver;
+    top:0px;
+
+
+}

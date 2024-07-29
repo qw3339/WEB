@@ -1,0 +1,51 @@
+﻿body
+{
+}
+.main_window{
+    border:solid 1px;
+    background-color:silver;
+
+    width:400px;
+    height:300px;
+
+
+    position:absolute;
+    top:150px;
+    left:400px;
+
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+
+}
+.title_bar {
+    /*Сторка заголовка*/
+    background-color: blue;
+    width: 400px;
+    height: 32px;
+
+    font-family:Tahoma;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+
+}
+.title_bar_left, title_bar_rigth {
+   
+    height: 32px;
+    display:flex;
+    align-items:center;
+
+}
+.app_ico {
+    width: 24px;
+    height: 24px;
+}
+.window_control_buttons {
+  
+}
+.control_buttons {
+    width: 24px;
+    height: 24px;
+}
